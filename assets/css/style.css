@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+header {
+    background-color: #bcf3f6;
+    color: #111010;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+nav .a {
+    color: whitesmoke;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos para las secciones de aptitudes */
+section:nth-of-type(4) {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+}
+
+/* Estilos para los primeros dos divs de las aptitudes */
+section:nth-of-type(4) > div:nth-of-type(-n+2) {
+    flex: 1;
+    margin-right: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilos para el div de idiomas */
+section:nth-of-type(4) > div:last-of-type {
+    flex-basis: 100%; /* Ocupar todo el ancho */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilos específicos para las imágenes enlaces del footer */
+footer img {
+    width: 170px;
+    height: 50px;
+    margin-right: 5px;
+}
